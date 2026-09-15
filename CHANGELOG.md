@@ -1,6 +1,6 @@
 # VanillaSkills Changelog
 
-## [2.2.0] - 2026-09-14
+## [2.3.0] - 2026-09-15
 
 ### Added
 - **Netherite Scrap repairs netherite gear.** An ingot is four scrap and four gold, and the gold does nothing
@@ -12,6 +12,10 @@
   now grows another on a ceiling within a few blocks, which makes a lush cave something to tend rather than
   strip. If there is nowhere for one to hang, the bone meal is not spent. Turn it off with
   `bonemealSporeBlossoms`.
+
+### Changed
+- **Updated to Minecraft 26.3.** Fabric loader 0.19.3 → 0.19.5, Fabric API 0.152.1+26.2 → 0.160.5+26.3,
+  `minecraft` dependency `~26.2` → `~26.3`. The 26.2 and 26.1.2 builds carry on alongside it.
 
 ### Fixed
 - **The Dragon set no longer fires you across the water.** Its dive-dash triggers on holding sneak while off
