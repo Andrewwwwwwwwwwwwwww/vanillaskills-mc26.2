@@ -56,7 +56,7 @@ Numbers that aren't content live in a per-world `gameplay.json` you can reload l
 
 ## Requirements
 
-- Minecraft **26.2** or **26.1.2**
+- Minecraft **26.3**, **26.2** or **26.1.2**
 - **Fabric** (with Fabric API) or **NeoForge**
 - Install on the **server**. A client install is optional; vanilla clients are fully supported.
 
