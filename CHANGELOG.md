@@ -1,5 +1,17 @@
 # VanillaSkills Changelog
 
+## [2.4.2] - 2026-09-15
+
+### Fixed
+- **The 26.3 build still could not start a server.** 2.4.1 rewrote the Skill Shard ore feature in the new block
+  state form, but Minecraft 26.3 also moved where it reads features from and how it lays them out:
+  `worldgen/configured_feature/` is now `worldgen/feature/`, and the settings that used to sit inside a
+  `config` object now sit next to `type`. The file was still in the old place in the old shape, so 26.3 never
+  read it, the three placed features pointed at a feature that did not exist, and the server stopped at the
+  same "Failed to load datapacks" line as before.
+  - Only the 26.3 build was affected. The 26.2 and 26.1.2 builds keep the old path and shape, which is what
+    those versions read.
+
 ## [2.4.1] - 2026-09-15
 
 ### Fixed
