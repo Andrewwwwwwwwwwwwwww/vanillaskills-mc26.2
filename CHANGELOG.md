@@ -1,5 +1,16 @@
 # VanillaSkills Changelog
 
+## [2.4.1] - 2026-09-15
+
+### Fixed
+- **The 26.3 build could not start a server.** Minecraft 26.3 changed how a block state is written in data
+  files — `{"Name": "minecraft:obsidian"}` became plain `"minecraft:obsidian"` — and four of the mod's own
+  data files still used the old form. Each one failed to parse, which took its whole registry down with it:
+  the three ancient-city processor lists and the Skill Shard ore feature. The server stopped at
+  "Failed to load datapacks, can't proceed with server load" before it ever reached a world.
+  - Only the 26.3 build was affected. The 26.2 and 26.1.2 builds still use the old form, because that is what
+    those versions expect, and they are untouched.
+
 ## [2.4.0] - 2026-09-15
 
 ### Changed
