@@ -17,6 +17,12 @@
   the recipe map at all — which ends at the same "Failed to load datapacks" line. It now filters the lookup.
   - Only the 26.3 build again. Found by actually booting a 26.3 server with the jar this time, which is how
     2.4.2 was verified before it went out.
+- **Loot tables on the 26.3 build were quietly emptied of their counts and chances.** 26.3 renamed the keys a loot
+  table hangs its conditions and item functions on, and it drops keys it does not know without a word rather than
+  rejecting the file. Every crate, the fishing table and the chest injections were still written the old way, so a
+  crate paid out one of everything at even odds and the Skill Shard chances never applied. Rewritten in the 26.3
+  shape on that build, and checked on a running 26.3 server before and after. 26.2 and 26.1.2 keep the old form,
+  which is what they read.
 
 ## [2.4.1] - 2026-09-15
 
