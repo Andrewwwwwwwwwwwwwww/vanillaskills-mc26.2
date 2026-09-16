@@ -197,6 +197,8 @@ public class GameplayConfig {
     /** Give the vanilla items that ship with no repair material one that fits (trident ← prismarine,
      *  bow/crossbow/rod ← string, flint-and-steel/shears ← iron, brush ← copper). */
     public static volatile boolean VANILLA_REPAIR_MATERIALS = true;
+    /** Movement speed added per Aquatic swim node while in water (0.2 = +20% each, +60% for all three). */
+    public static volatile double AQUATIC_SWIM_SPEED = 0.2;
     /** Bone meal on a spore blossom grows another on a ceiling nearby, making them renewable. */
     public static volatile boolean BONEMEAL_SPORE_BLOSSOMS = true;
     /** Loot `quality` on the crate catch: ~+10% relative crate odds per point of fishing luck
@@ -409,6 +411,10 @@ public class GameplayConfig {
     /** Give the vanilla items with no repair material one that fits: trident ← prismarine,
      *  bow/crossbow/fishing rod ← string, flint-and-steel/shears ← iron ingot, brush ← copper ingot. */
     public boolean vanillaRepairMaterials = true;
+    /** How much faster each Aquatic swim node makes you in water, as a fraction of your normal speed.
+     *  Three nodes at the default is +60%, which a dolphin would still comfortably beat. 0 turns the
+     *  lane's swim speed off and leaves only its seabed walking. */
+    public double aquaticSwimSpeed = 0.2;
     /** Bone meal on a spore blossom grows another on a nearby ceiling — the one lush-cave plant vanilla
      *  gives no way to make more of. */
     public boolean bonemealSporeBlossoms = true;
@@ -549,6 +555,7 @@ public class GameplayConfig {
         g.put("taskShardCooldownSeconds", "After a task shard drops, seconds before that player can earn another.");
         g.put("taskShardLuckBonus", "Task-shard odds bonus per point of luck: chance x (1 + luck x this).");
         g.put("vanillaRepairMaterials", "Give repair-less vanilla items a repair material (trident<-prismarine, bow/crossbow/rod<-string, flint-and-steel/shears<-iron, brush<-copper).");
+        g.put("aquaticSwimSpeed", "Movement speed added per Aquatic swim node while in water (0.2 = +20% each).");
         g.put("bonemealSporeBlossoms", "Bone meal on a spore blossom grows another on a ceiling nearby, so they are renewable.");
         g.put("crateFishingLuckQuality", "Crate-rate bonus per point of fishing luck (~+10% relative per point at 1; 0 ignores luck).");
         g.put("dragonScaleDrop", "Dragon Scales per player dragon kill.");
@@ -755,6 +762,7 @@ public class GameplayConfig {
         TASK_SHARD_COOLDOWN_SECONDS = Math.max(0, taskShardCooldownSeconds);
         TASK_SHARD_LUCK_BONUS = Math.max(0.0, taskShardLuckBonus);
         VANILLA_REPAIR_MATERIALS = vanillaRepairMaterials;
+        AQUATIC_SWIM_SPEED = Math.max(0.0, aquaticSwimSpeed);
         BONEMEAL_SPORE_BLOSSOMS = bonemealSporeBlossoms;
         CRATE_FISHING_LUCK_QUALITY = Math.max(0, crateFishingLuckQuality);
         DRAGON_SCALE_DROP = Math.max(0, dragonScaleDrop);

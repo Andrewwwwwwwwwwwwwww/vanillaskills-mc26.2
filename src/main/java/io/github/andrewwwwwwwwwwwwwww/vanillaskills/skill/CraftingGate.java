@@ -171,6 +171,19 @@ public final class CraftingGate {
         return 0;
     }
 
+    /**
+     * How many Aquatic swim-speed nodes the player has (0-3); each one pushes them harder through water.
+     *
+     * <p>The lane used to hand out Dolphin's Grace, which Minecraft reads as a yes/no and which therefore
+     * arrived whole at the first node — a permanent dolphin. This is a dial instead; see {@link SwimSpeed}.
+     */
+    public static int swimSpeedLevel(Player player) {
+        for (int level = 3; level >= 1; level--) {
+            if (hasFlag(player, "swim_speed_" + level)) return level;
+        }
+        return 0;
+    }
+
     /** True if any of the player's unlocked skill nodes grants the given flag. */
     public static boolean hasFlag(Player player, String flag) {
         if (!(player instanceof ServerPlayer sp)) return false;

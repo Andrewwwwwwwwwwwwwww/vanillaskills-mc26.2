@@ -457,6 +457,7 @@ public class VanillaSkills implements ModInitializer {
             DragonSet.onPlayerLeave(player.getUUID());
             io.github.andrewwwwwwwwwwwwwww.vanillaskills.skill.StepHeight.onLeave(player.getUUID());
             io.github.andrewwwwwwwwwwwwwww.vanillaskills.shard.ShardBar.forget(player);
+            io.github.andrewwwwwwwwwwwwwww.vanillaskills.skill.SwimSpeed.forget(player);
         });
         ServerPlayerEvents.AFTER_RESPAWN.register((oldPlayer, newPlayer, alive) -> {
             PLAYERS.applyAll(newPlayer);
@@ -537,6 +538,8 @@ public class VanillaSkills implements ModInitializer {
         DragonSet.tick(srv);
         // Every tick: suppress the Mountaineer step-up bonus while sneaking / toggled off (safety).
         io.github.andrewwwwwwwwwwwwwww.vanillaskills.skill.StepHeight.tick(srv, TREE.tree());
+        // Every tick: the Aquatic lane's swim bonus goes on entering water and comes off leaving it.
+        io.github.andrewwwwwwwwwwwwwww.vanillaskills.skill.SwimSpeed.tick(srv);
         // Throttled (every ~2s, internally): discovery/dimension Feats + STAT-quest baselines.
         io.github.andrewwwwwwwwwwwwwww.vanillaskills.skill.Feats.serverTick(srv);
         if (tickCounter % ELYTRA_FORGE_INTERVAL == 0) {

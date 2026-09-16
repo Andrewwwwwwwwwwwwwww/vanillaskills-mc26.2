@@ -1716,7 +1716,7 @@
       "id": "aquatic_4",
       "title": "Aquatic IV",
       "description": [
-        "Faster swimming — Dolphin's Grace, stacks with Depth Strider"
+        "Swim faster — and it stacks with Depth Strider"
       ],
       "icon": "minecraft:heart_of_the_sea",
       "weight": 18,
@@ -1734,11 +1734,8 @@
           "amplifier": 0
         },
         {
-          "type": "status_effect",
-          "operation": "add_value",
-          "amount": 0,
-          "effect": "minecraft:dolphins_grace",
-          "amplifier": 0
+          "type": "flag",
+          "name": "swim_speed_1"
         }
       ]
     },
@@ -1746,7 +1743,7 @@
       "id": "aquatic_5",
       "title": "Aquatic V",
       "description": [
-        "Faster swimming + walk through water at land speed"
+        "Swim faster still, and walk through water at land speed"
       ],
       "icon": "minecraft:heart_of_the_sea",
       "weight": 24,
@@ -1764,11 +1761,8 @@
           "amplifier": 0
         },
         {
-          "type": "status_effect",
-          "operation": "add_value",
-          "amount": 0,
-          "effect": "minecraft:dolphins_grace",
-          "amplifier": 1
+          "type": "flag",
+          "name": "swim_speed_2"
         }
       ]
     },
@@ -1776,7 +1770,7 @@
       "id": "aquatic_6",
       "title": "Aquatic VI",
       "description": [
-        "Full swim speed & water movement"
+        "Fastest swimming the lane offers, and full water movement"
       ],
       "icon": "minecraft:heart_of_the_sea",
       "weight": 30,
@@ -1794,11 +1788,8 @@
           "amplifier": 0
         },
         {
-          "type": "status_effect",
-          "operation": "add_value",
-          "amount": 0,
-          "effect": "minecraft:dolphins_grace",
-          "amplifier": 2
+          "type": "flag",
+          "name": "swim_speed_3"
         }
       ]
     },

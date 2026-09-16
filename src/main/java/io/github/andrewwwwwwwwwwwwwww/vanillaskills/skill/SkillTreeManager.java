@@ -297,20 +297,20 @@ public class SkillTreeManager {
                         {SkillEffect.attribute("minecraft:oxygen_bonus", "add_value", 1.0)},
                         {SkillEffect.attribute("minecraft:oxygen_bonus", "add_value", 1.0)},
                         {SkillEffect.attribute("minecraft:oxygen_bonus", "add_value", 1.0)},
-                        // Swim speed: Dolphin's Grace actually speeds the swim stroke (water_movement_efficiency
-                        // only governs walking on the seabed and is capped at 1.0). Grace is a status effect, a
-                        // separate system from the Depth Strider enchantment, so the two stack.
+                        // Swim speed is the mod's own, graduated across these three nodes — see SwimSpeed.
+                        // water_movement_efficiency is the other half and only governs walking on the seabed;
+                        // it is capped at 1.0, which these three reach together.
                         {SkillEffect.attribute("minecraft:water_movement_efficiency", "add_value", 0.34),
-                                SkillEffect.status("minecraft:dolphins_grace", 0)},
+                                SkillEffect.flag("swim_speed_1")},
                         {SkillEffect.attribute("minecraft:water_movement_efficiency", "add_value", 0.33),
-                                SkillEffect.status("minecraft:dolphins_grace", 1)},
+                                SkillEffect.flag("swim_speed_2")},
                         {SkillEffect.attribute("minecraft:water_movement_efficiency", "add_value", 0.33),
-                                SkillEffect.status("minecraft:dolphins_grace", 2)}
+                                SkillEffect.flag("swim_speed_3")}
                 },
                 new String[]{"+1 breath", "+1 breath (+2)", "+1 breath (+3)",
-                        "Faster swimming — Dolphin's Grace, stacks with Depth Strider",
-                        "Faster swimming + walk through water at land speed",
-                        "Full swim speed & water movement"});
+                        "Swim faster — and it stacks with Depth Strider",
+                        "Swim faster still, and walk through water at land speed",
+                        "Fastest swimming the lane offers, and full water movement"});
 
         // Armorsmith: a 10-tier ladder (paid in QUEST SHARDS) that gates crafting each armour tier,
         // climbing Hardwood → Copper → Gold → Rose Gold → Iron → Steel → Diamond → Crystalline →

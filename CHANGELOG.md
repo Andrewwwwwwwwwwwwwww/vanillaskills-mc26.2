@@ -1,5 +1,24 @@
 # VanillaSkills Changelog
 
+## [2.4.0] - 2026-09-15
+
+### Changed
+- **The Aquatic lane's swim speed is the mod's own, and no longer Dolphin's Grace.** Minecraft reads that
+  effect as a yes/no — `hasEffect`, not the level — so the first of the three swim nodes was already handing
+  out the whole of it, the two above it added nothing to swimming, and what it handed out was a permanent
+  dolphin: water drag dropped from 0.8 to 0.96, which multiplies your top speed in water several times over.
+  - Each of the three nodes now adds to how hard you swim, while you are in water. Three of them together is a
+    real gain that an actual dolphin would still comfortably beat, and the nodes finally differ from one
+    another.
+  - How much is `aquaticSwimSpeed` in `gameplay.json`, +20% per node by default. Set it to 0 to leave the
+    lane with only its seabed walking.
+  - It is an attribute rather than an effect, so it still reaches a vanilla client on its own.
+  - Nothing to do on an existing world: the old effect simply lapses within twenty seconds of the update,
+    because nothing renews it any more.
+- **The stats screen tells the truth about that lane.** It was labelling water-movement-efficiency as "Swim
+  Speed", which is the attribute that governs walking along the seabed. Swim speed and wading are separate
+  lines now, and each shows what it actually is.
+
 ## [2.3.0] - 2026-09-15
 
 ### Added

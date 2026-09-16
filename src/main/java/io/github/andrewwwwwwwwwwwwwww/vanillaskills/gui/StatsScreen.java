@@ -76,7 +76,10 @@ public final class StatsScreen {
         return info(Items.HEART_OF_THE_SEA,
                 Lang.tr(player, "vanillaskills.lane.aquatic", "Aquatic"), ChatFormatting.AQUA, List.of(
                 Lang.tr(player, "vanillaskills.stats.breaths", "Breaths: +%d", (int) Math.round(breaths)),
-                Lang.tr(player, "vanillaskills.stats.swim", "Swim Speed: +%d%%", Math.round(swim * 100)),
+                Lang.tr(player, "vanillaskills.stats.swim", "Swim Speed: +%d%%",
+                        Math.round(io.github.andrewwwwwwwwwwwwwww.vanillaskills.skill.CraftingGate.swimSpeedLevel(player)
+                                * io.github.andrewwwwwwwwwwwwwww.vanillaskills.config.GameplayConfig.AQUATIC_SWIM_SPEED * 100)),
+                Lang.tr(player, "vanillaskills.stats.wade", "Wading: +%d%%", Math.round(swim * 100)),
                 Lang.tr(player, "vanillaskills.stats.mine", "Mine Speed: +%d%%", Math.round(mine * 100))));
     }
 
