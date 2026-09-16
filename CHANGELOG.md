@@ -11,6 +11,12 @@
   same "Failed to load datapacks" line as before.
   - Only the 26.3 build was affected. The 26.2 and 26.1.2 builds keep the old path and shape, which is what
     those versions read.
+- **And once past that, the recipe removal stopped it instead.** Since 26.3 recipes are a registry, and the
+  recipe map is built from that registry's lookup rather than from a list of recipes. The hook that drops the
+  vanilla lodestone recipe still expected the list, so it could not attach, and Minecraft then refused to load
+  the recipe map at all — which ends at the same "Failed to load datapacks" line. It now filters the lookup.
+  - Only the 26.3 build again. Found by actually booting a 26.3 server with the jar this time, which is how
+    2.4.2 was verified before it went out.
 
 ## [2.4.1] - 2026-09-15
 
