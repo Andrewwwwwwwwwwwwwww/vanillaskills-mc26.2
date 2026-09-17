@@ -24,6 +24,15 @@
   shape on that build, and checked on a running 26.3 server before and after. 26.2 and 26.1.2 keep the old form,
   which is what they read.
 
+- **The pushed texture pack could not load on 26.3.** It declared support for resource-pack formats 84
+  through 88, which is 26.1.2 through 26.2. Minecraft 26.3 reads format 97, so the pack sat outside the
+  range it advertised and a 26.3 client quietly fell back to vanilla textures for every piece of custom
+  gear — the one part of the mod a vanilla client sees. The range now runs 84 to 97, so a single pack
+  covers all three versions.
+  - The pack is pinned by hash as well as by address, so this is a new zip on the release. A server whose
+    `gameplay.json` still names the 2.0.1 pack is moved to it on load, the same way older packs have
+    always been carried forward.
+
 ## [2.4.1] - 2026-09-15
 
 ### Fixed
