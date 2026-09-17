@@ -18,11 +18,18 @@ if (!sha1 || !/^[0-9a-f]{40}$/.test(sha1)) {
 }
 
 const here = path.resolve(__dirname, '..');
+// Every edition, listed from the projects root rather than relative to whichever copy of this
+// script is running. The old relative list was written when there were four editions and only ever
+// reached the MC version it sat in plus 26.1.2, so adding 26.2 and 26.3 left two editions holding a
+// stale hash — and a stale hash is a pack the client refuses, not one that merely looks wrong.
+const root = path.resolve(here, '../..');
 const EDITIONS = [
-  here,
-  path.join(here, '../../26.1.2/vanillaskills'),
-  path.join(here, '../vanillaskills-neoforge'),
-  path.join(here, '../../26.1.2/vanillaskills-neoforge'),
+  path.join(root, '26.3/vanillaskills'),
+  path.join(root, '26.3/vanillaskills-neoforge'),
+  path.join(root, '26.2/vanillaskills'),
+  path.join(root, '26.2/vanillaskills-neoforge'),
+  path.join(root, '26.1.2/vanillaskills'),
+  path.join(root, '26.1.2/vanillaskills-neoforge'),
 ];
 
 let patched = 0;

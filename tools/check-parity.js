@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 /*
- * Compare the four editions' Java sources and report anything that drifted.
+ * Compare the six editions' Java sources and report anything that drifted.
  *
  *   node tools/check-parity.js
  *
- * The four editions are two axes, and each axis allows a different kind of difference:
+ * The six editions are two axes, and each axis allows a different kind of difference:
  *
  *   VERSION  (26.2 vs 26.1.2, same loader)  — should be IDENTICAL apart from renamed MC symbols.
  *   LOADER   (Fabric vs NeoForge, same MC)  — a short list of entrypoint/registration files differ.
@@ -80,8 +80,12 @@ compare('VERSION (Fabric)', '26.2/vanillaskills', '26.1.2/vanillaskills', new Se
 compare('VERSION (NeoForge)', '26.2/vanillaskills-neoforge', '26.1.2/vanillaskills-neoforge', new Set());
 // LOADER axis: same MC, different loader. Only the entrypoint/registration files may differ.
 compare('LOADER (26.2)', '26.2/vanillaskills', '26.2/vanillaskills-neoforge', LOADER_DIVERGENT);
+// 26.3 is a port, so it is NOT compared to 26.2 on the VERSION axis — the MC symbols genuinely
+// differ. Its two loaders must still agree with each other, and that is the check that would have
+// caught the 26.3 fixes landing on Fabric alone.
+compare('LOADER (26.3)', '26.3/vanillaskills', '26.3/vanillaskills-neoforge', LOADER_DIVERGENT);
 
 console.log(problems === 0
-  ? '\nAll four editions in parity.'
+  ? '\nAll six editions in parity.'
   : `\n${problems} problem(s) — propagate the change, or add the file to LOADER_DIVERGENT if it is meant to differ.`);
 process.exit(problems === 0 ? 0 : 1);

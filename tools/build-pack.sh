@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Rebuild the pushed texture pack and wire its hash into all four editions.
+# Rebuild the pushed texture pack and wire its hash into all six editions.
 #
 #   ./tools/build-pack.sh [release-tag]
 #
@@ -55,4 +55,4 @@ echo "sha1   $SHA1"
 node "$HERE/tools/patch-pack-refs.js" "$SHA1" ${TAG:+"$TAG"}
 
 echo
-echo "Next: upload $OUT to the GitHub release${TAG:+ $TAG}, then rebuild all four editions."
+echo "Next: upload $OUT to the GitHub release${TAG:+ $TAG}, then rebuild all six editions."

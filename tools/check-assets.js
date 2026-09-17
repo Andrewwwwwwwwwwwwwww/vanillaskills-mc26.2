@@ -18,7 +18,7 @@
  *      to its hardcoded English. It logged one line and was otherwise invisible.
  *
  * Neither is a compile error, and neither is caught by check-parity.js (which compares editions
- * against each other — and a bug copied to all four editions is "in parity").
+ * against each other — and a bug copied to all six editions is "in parity").
  */
 const fs = require('fs');
 const path = require('path');
