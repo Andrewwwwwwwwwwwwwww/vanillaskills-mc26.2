@@ -1,5 +1,18 @@
 # VanillaSkills Changelog
 
+## [2.4.3] - 2026-09-17
+
+### Fixed
+- **The wandering trader was handing out plain Written Books instead of Unstable Skill Shards.** An
+  Unstable Skill Shard is a written book wearing a set of components, and the trade file attaches them
+  through a field Minecraft 26.3 renamed: `given_item_modifiers` became `given_item_modifier`, and the
+  loot functions inside it are keyed on `type` rather than `function`. A trade file drops a field it does
+  not recognise without saying anything, so all 29 wandering-trader trades loaded, cost the right materials
+  and paid out the base item with none of its components — the wrong name, the wrong model, a stack of 16
+  instead of 64, and nothing the mod could recognise as a shard afterwards.
+  - Only the 26.3 build was affected. The 26.2 and 26.1.2 builds keep the plural field and the `function`
+    key, which is what those versions read.
+
 ## [2.4.2] - 2026-09-15
 
 ### Fixed
