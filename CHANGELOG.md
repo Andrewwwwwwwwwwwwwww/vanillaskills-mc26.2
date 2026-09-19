@@ -1,8 +1,22 @@
 # VanillaSkills Changelog
 
-## [2.4.3] - 2026-09-17
+## [2.4.3] - 2026-09-19
+
+### Changed
+- **Every enchanted book in the Quest Shop now costs 12, and costs 12 whichever shard you pay with.**
+  Prices ran from 26 to 55 Quest Shards, and the Skill-Shard price was only ever that figure divided by
+  three — so the shop's own currency, the one quests actually pay out, was three times the worse way to
+  buy its own stock. A single flat price replaces the spread, and an offer can now set its Skill-Shard
+  price rather than always deriving it.
 
 ### Fixed
+- **A damaged trident could not be repaired with prismarine shards.** It wanted a prismarine *block*,
+  which is four shards, so the one repair material anybody would reach for did nothing and the anvil sat
+  empty with no explanation — the same overcharge the Netherite Ingot used to make. It takes shards now.
+  A trident already carrying the old material corrects itself within a couple of seconds; a repair
+  material set by a datapack or by hand is left alone.
+
+### Fixed (Minecraft 26.3 only)
 - **The wandering trader was handing out plain Written Books instead of Unstable Skill Shards.** An
   Unstable Skill Shard is a written book wearing a set of components, and the trade file attaches them
   through a field Minecraft 26.3 renamed: `given_item_modifiers` became `given_item_modifier`, and the

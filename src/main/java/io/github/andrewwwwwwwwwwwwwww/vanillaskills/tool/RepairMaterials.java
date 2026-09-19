@@ -34,7 +34,7 @@ public final class RepairMaterials {
     private RepairMaterials() {}
 
     private static final Map<Item, Item> MATERIALS = Map.of(
-            Items.TRIDENT, Items.PRISMARINE,
+            Items.TRIDENT, Items.PRISMARINE_SHARD,
             Items.BOW, Items.STRING,
             Items.CROSSBOW, Items.STRING,
             Items.FISHING_ROD, Items.STRING,
@@ -70,9 +70,34 @@ public final class RepairMaterials {
         if (addNetheriteScrap(stack)) return;
         Item material = MATERIALS.get(stack.getItem());
         if (material == null) return;
-        if (stack.has(DataComponents.REPAIRABLE)) return;
+        if (stack.has(DataComponents.REPAIRABLE)) {
+            retireOldMaterial(stack);
+            return;
+        }
         stack.set(DataComponents.REPAIRABLE,
                 new Repairable(HolderSet.direct(List.of(material.builtInRegistryHolder()))));
+    }
+
+    /**
+     * Materials this mod once stamped and has since thought better of, mapped to what replaces them.
+     *
+     * <p>A stamped component is never revisited, so a trident stamped before this correction would keep
+     * asking for a prismarine <i>block</i> — four shards — for ever. A stack whose repair material is
+     * exactly the one we used to write is ours to correct; anything else, including a datapack's or a
+     * player's own, is left alone.
+     */
+    private static final Map<Item, Item> SUPERSEDED = Map.of(Items.PRISMARINE, Items.PRISMARINE_SHARD);
+
+    private static void retireOldMaterial(ItemStack stack) {
+        Repairable current = stack.get(DataComponents.REPAIRABLE);
+        if (current == null) return;
+        List<net.minecraft.core.Holder<Item>> items = new java.util.ArrayList<>();
+        for (net.minecraft.core.Holder<Item> holder : current.items()) items.add(holder);
+        if (items.size() != 1) return;                       // only the single-material stamps are ours
+        Item replacement = SUPERSEDED.get(items.get(0).value());
+        if (replacement == null) return;
+        stack.set(DataComponents.REPAIRABLE,
+                new Repairable(HolderSet.direct(List.of(replacement.builtInRegistryHolder()))));
     }
 
     /**

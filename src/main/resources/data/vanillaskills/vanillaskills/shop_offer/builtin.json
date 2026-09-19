@@ -1,127 +1,915 @@
 {
   "replace": false,
   "values": [
-    {"id":"minecraft:breadx8","item":"minecraft:bread","count":8,"price":1},
-    {"id":"minecraft:breadx16","item":"minecraft:bread","count":16,"price":2},
-    {"id":"minecraft:breadx32","item":"minecraft:bread","count":32,"price":4},
-    {"id":"minecraft:cooked_beefx8","item":"minecraft:cooked_beef","count":8,"price":3},
-    {"id":"minecraft:cooked_beefx16","item":"minecraft:cooked_beef","count":16,"price":5},
-    {"id":"minecraft:cooked_chickenx12","item":"minecraft:cooked_chicken","count":12,"price":3},
-    {"id":"minecraft:cooked_porkchopx12","item":"minecraft:cooked_porkchop","count":12,"price":4},
-    {"id":"minecraft:baked_potatox16","item":"minecraft:baked_potato","count":16,"price":2},
-    {"id":"minecraft:golden_carrotx8","item":"minecraft:golden_carrot","count":8,"price":6},
-    {"id":"minecraft:applex16","item":"minecraft:apple","count":16,"price":2},
-    {"id":"minecraft:pumpkin_piex8","item":"minecraft:pumpkin_pie","count":8,"price":3},
-    {"id":"minecraft:cookiex16","item":"minecraft:cookie","count":16,"price":1},
-    {"id":"minecraft:sweet_berriesx16","item":"minecraft:sweet_berries","count":16,"price":2},
-    {"id":"minecraft:honey_bottlex4","item":"minecraft:honey_bottle","count":4,"price":3},
-    {"id":"minecraft:milk_bucketx3","item":"minecraft:milk_bucket","count":3,"price":3},
-    {"id":"minecraft:cobblestonex64","item":"minecraft:cobblestone","count":64,"price":2},
-    {"id":"minecraft:stonex32","item":"minecraft:stone","count":32,"price":2},
-    {"id":"minecraft:stone_bricksx32","item":"minecraft:stone_bricks","count":32,"price":3},
-    {"id":"minecraft:oak_logx16","item":"minecraft:oak_log","count":16,"price":2},
-    {"id":"minecraft:oak_logx32","item":"minecraft:oak_log","count":32,"price":3},
-    {"id":"minecraft:oak_planksx32","item":"minecraft:oak_planks","count":32,"price":2},
-    {"id":"minecraft:glassx32","item":"minecraft:glass","count":32,"price":3},
-    {"id":"minecraft:sandx32","item":"minecraft:sand","count":32,"price":2},
-    {"id":"minecraft:dirtx64","item":"minecraft:dirt","count":64,"price":1},
-    {"id":"minecraft:white_woolx16","item":"minecraft:white_wool","count":16,"price":2},
-    {"id":"minecraft:terracottax16","item":"minecraft:terracotta","count":16,"price":3},
-    {"id":"minecraft:white_concrete_powderx16","item":"minecraft:white_concrete_powder","count":16,"price":3},
-    {"id":"minecraft:bricksx16","item":"minecraft:bricks","count":16,"price":4},
-    {"id":"minecraft:quartz_blockx8","item":"minecraft:quartz_block","count":8,"price":5},
-    {"id":"minecraft:torchx16","item":"minecraft:torch","count":16,"price":1},
-    {"id":"minecraft:torchx32","item":"minecraft:torch","count":32,"price":1},
-    {"id":"minecraft:glowstonex8","item":"minecraft:glowstone","count":8,"price":5},
-    {"id":"minecraft:sea_lanternx4","item":"minecraft:sea_lantern","count":4,"price":6},
-    {"id":"minecraft:scaffoldingx16","item":"minecraft:scaffolding","count":16,"price":3},
-    {"id":"minecraft:ladderx16","item":"minecraft:ladder","count":16,"price":2},
-    {"id":"minecraft:obsidianx4","item":"minecraft:obsidian","count":4,"price":4},
-    {"id":"minecraft:obsidianx8","item":"minecraft:obsidian","count":8,"price":7},
-    {"id":"minecraft:coalx16","item":"minecraft:coal","count":16,"price":1},
-    {"id":"minecraft:coalx32","item":"minecraft:coal","count":32,"price":2},
-    {"id":"minecraft:charcoalx16","item":"minecraft:charcoal","count":16,"price":1},
-    {"id":"minecraft:iron_ingotx4","item":"minecraft:iron_ingot","count":4,"price":3},
-    {"id":"minecraft:iron_ingotx8","item":"minecraft:iron_ingot","count":8,"price":6},
-    {"id":"minecraft:iron_ingotx16","item":"minecraft:iron_ingot","count":16,"price":11},
-    {"id":"minecraft:gold_ingotx4","item":"minecraft:gold_ingot","count":4,"price":4},
-    {"id":"minecraft:gold_ingotx8","item":"minecraft:gold_ingot","count":8,"price":7},
-    {"id":"minecraft:copper_ingotx8","item":"minecraft:copper_ingot","count":8,"price":3},
-    {"id":"minecraft:copper_ingotx16","item":"minecraft:copper_ingot","count":16,"price":5},
-    {"id":"minecraft:redstonex16","item":"minecraft:redstone","count":16,"price":2},
-    {"id":"minecraft:redstonex32","item":"minecraft:redstone","count":32,"price":4},
-    {"id":"minecraft:lapis_lazulix16","item":"minecraft:lapis_lazuli","count":16,"price":3},
-    {"id":"minecraft:diamondx1","item":"minecraft:diamond","count":1,"price":6},
-    {"id":"minecraft:diamondx2","item":"minecraft:diamond","count":2,"price":11},
-    {"id":"minecraft:diamondx4","item":"minecraft:diamond","count":4,"price":20},
-    {"id":"minecraft:emeraldx4","item":"minecraft:emerald","count":4,"price":5},
-    {"id":"minecraft:emeraldx8","item":"minecraft:emerald","count":8,"price":9},
-    {"id":"minecraft:amethyst_shardx8","item":"minecraft:amethyst_shard","count":8,"price":4},
-    {"id":"minecraft:stringx16","item":"minecraft:string","count":16,"price":2},
-    {"id":"minecraft:leatherx8","item":"minecraft:leather","count":8,"price":3},
-    {"id":"minecraft:slime_ballx8","item":"minecraft:slime_ball","count":8,"price":4},
-    {"id":"minecraft:gunpowderx8","item":"minecraft:gunpowder","count":8,"price":4},
-    {"id":"minecraft:bonex16","item":"minecraft:bone","count":16,"price":2},
-    {"id":"minecraft:flintx16","item":"minecraft:flint","count":16,"price":2},
-    {"id":"minecraft:blaze_rodx4","item":"minecraft:blaze_rod","count":4,"price":6},
-    {"id":"minecraft:netherite_scrapx1","item":"minecraft:netherite_scrap","count":1,"price":18},
-    {"id":"minecraft:iron_pickaxex1","item":"minecraft:iron_pickaxe","count":1,"price":5},
-    {"id":"minecraft:iron_axex1","item":"minecraft:iron_axe","count":1,"price":5},
-    {"id":"minecraft:iron_shovelx1","item":"minecraft:iron_shovel","count":1,"price":3},
-    {"id":"minecraft:iron_swordx1","item":"minecraft:iron_sword","count":1,"price":5},
-    {"id":"minecraft:fishing_rodx1","item":"minecraft:fishing_rod","count":1,"price":3},
-    {"id":"minecraft:shearsx1","item":"minecraft:shears","count":1,"price":3},
-    {"id":"minecraft:flint_and_steelx1","item":"minecraft:flint_and_steel","count":1,"price":2},
-    {"id":"minecraft:bucketx1","item":"minecraft:bucket","count":1,"price":2},
-    {"id":"minecraft:bucketx3","item":"minecraft:bucket","count":3,"price":5},
-    {"id":"minecraft:bowx1","item":"minecraft:bow","count":1,"price":4},
-    {"id":"minecraft:crossbowx1","item":"minecraft:crossbow","count":1,"price":5},
-    {"id":"minecraft:shieldx1","item":"minecraft:shield","count":1,"price":4},
-    {"id":"minecraft:spyglassx1","item":"minecraft:spyglass","count":1,"price":3},
-    {"id":"minecraft:compassx1","item":"minecraft:compass","count":1,"price":4},
-    {"id":"minecraft:spongex1","item":"minecraft:sponge","count":1,"price":5},
-    {"id":"minecraft:iron_helmetx1","item":"minecraft:iron_helmet","count":1,"price":5},
-    {"id":"minecraft:iron_chestplatex1","item":"minecraft:iron_chestplate","count":1,"price":8},
-    {"id":"minecraft:iron_leggingsx1","item":"minecraft:iron_leggings","count":1,"price":7},
-    {"id":"minecraft:iron_bootsx1","item":"minecraft:iron_boots","count":1,"price":5},
-    {"id":"iron_set","label":"Iron Armor Set","price":22,"grants":[{"item":"minecraft:iron_helmet","count":1},{"item":"minecraft:iron_chestplate","count":1},{"item":"minecraft:iron_leggings","count":1},{"item":"minecraft:iron_boots","count":1}]},
-    {"id":"leather_set","label":"Leather Armor Set","price":5,"grants":[{"item":"minecraft:leather_helmet","count":1},{"item":"minecraft:leather_chestplate","count":1},{"item":"minecraft:leather_leggings","count":1},{"item":"minecraft:leather_boots","count":1}]},
-    {"id":"minecraft:turtle_helmetx1","item":"minecraft:turtle_helmet","count":1,"price":6},
-    {"id":"minecraft:arrowx16","item":"minecraft:arrow","count":16,"price":2},
-    {"id":"minecraft:arrowx32","item":"minecraft:arrow","count":32,"price":3},
-    {"id":"minecraft:ender_pearlx2","item":"minecraft:ender_pearl","count":2,"price":4},
-    {"id":"minecraft:ender_pearlx4","item":"minecraft:ender_pearl","count":4,"price":7},
-    {"id":"minecraft:firework_rocketx16","item":"minecraft:firework_rocket","count":16,"price":4},
-    {"id":"minecraft:tntx4","item":"minecraft:tnt","count":4,"price":7},
-    {"id":"minecraft:golden_applex1","item":"minecraft:golden_apple","count":1,"price":8},
-    {"id":"minecraft:golden_applex2","item":"minecraft:golden_apple","count":2,"price":15},
-    {"id":"minecraft:saddlex1","item":"minecraft:saddle","count":1,"price":5},
-    {"id":"minecraft:name_tagx1","item":"minecraft:name_tag","count":1,"price":4},
-    {"id":"minecraft:leadx4","item":"minecraft:lead","count":4,"price":3},
-    {"id":"minecraft:powered_railx8","item":"minecraft:powered_rail","count":8,"price":6},
-    {"id":"minecraft:bone_mealx16","item":"minecraft:bone_meal","count":16,"price":2},
-    {"id":"minecraft:wheat_seedsx16","item":"minecraft:wheat_seeds","count":16,"price":1},
-    {"id":"minecraft:sugar_canex16","item":"minecraft:sugar_cane","count":16,"price":2},
-    {"id":"minecraft:nether_wartx8","item":"minecraft:nether_wart","count":8,"price":3},
-    {"id":"minecraft:bookshelfx4","item":"minecraft:bookshelf","count":4,"price":5},
-    {"id":"minecraft:bookx8","item":"minecraft:book","count":8,"price":2},
-    {"id":"book:minecraft:efficiency:1","label":"Efficiency I","price":26,"grants":[{"item":"minecraft:enchanted_book","count":1,"enchantment":"minecraft:efficiency","level":1}]},
-    {"id":"book:minecraft:efficiency:2","label":"Efficiency II","price":40,"grants":[{"item":"minecraft:enchanted_book","count":1,"enchantment":"minecraft:efficiency","level":2}]},
-    {"id":"book:minecraft:unbreaking:1","label":"Unbreaking I","price":26,"grants":[{"item":"minecraft:enchanted_book","count":1,"enchantment":"minecraft:unbreaking","level":1}]},
-    {"id":"book:minecraft:unbreaking:2","label":"Unbreaking II","price":40,"grants":[{"item":"minecraft:enchanted_book","count":1,"enchantment":"minecraft:unbreaking","level":2}]},
-    {"id":"book:minecraft:protection:1","label":"Protection I","price":30,"grants":[{"item":"minecraft:enchanted_book","count":1,"enchantment":"minecraft:protection","level":1}]},
-    {"id":"book:minecraft:protection:2","label":"Protection II","price":45,"grants":[{"item":"minecraft:enchanted_book","count":1,"enchantment":"minecraft:protection","level":2}]},
-    {"id":"book:minecraft:sharpness:1","label":"Sharpness I","price":30,"grants":[{"item":"minecraft:enchanted_book","count":1,"enchantment":"minecraft:sharpness","level":1}]},
-    {"id":"book:minecraft:sharpness:2","label":"Sharpness II","price":45,"grants":[{"item":"minecraft:enchanted_book","count":1,"enchantment":"minecraft:sharpness","level":2}]},
-    {"id":"book:minecraft:feather_falling:1","label":"Feather Falling I","price":26,"grants":[{"item":"minecraft:enchanted_book","count":1,"enchantment":"minecraft:feather_falling","level":1}]},
-    {"id":"book:minecraft:feather_falling:2","label":"Feather Falling II","price":40,"grants":[{"item":"minecraft:enchanted_book","count":1,"enchantment":"minecraft:feather_falling","level":2}]},
-    {"id":"book:minecraft:respiration:1","label":"Respiration I","price":26,"grants":[{"item":"minecraft:enchanted_book","count":1,"enchantment":"minecraft:respiration","level":1}]},
-    {"id":"book:minecraft:looting:1","label":"Looting I","price":35,"grants":[{"item":"minecraft:enchanted_book","count":1,"enchantment":"minecraft:looting","level":1}]},
-    {"id":"book:minecraft:looting:2","label":"Looting II","price":50,"grants":[{"item":"minecraft:enchanted_book","count":1,"enchantment":"minecraft:looting","level":2}]},
-    {"id":"book:minecraft:luck_of_the_sea:1","label":"Luck of the Sea I","price":35,"grants":[{"item":"minecraft:enchanted_book","count":1,"enchantment":"minecraft:luck_of_the_sea","level":1}]},
-    {"id":"book:minecraft:luck_of_the_sea:2","label":"Luck of the Sea II","price":50,"grants":[{"item":"minecraft:enchanted_book","count":1,"enchantment":"minecraft:luck_of_the_sea","level":2}]},
-    {"id":"book:minecraft:fortune:1","label":"Fortune I","price":55,"grants":[{"item":"minecraft:enchanted_book","count":1,"enchantment":"minecraft:fortune","level":1}]},
-    {"id":"book:minecraft:silk_touch:1","label":"Silk Touch I","price":55,"grants":[{"item":"minecraft:enchanted_book","count":1,"enchantment":"minecraft:silk_touch","level":1}]},
-    {"id":"book:vanillaskills:unboxing:1","label":"Unboxing I","price":45,"grants":[{"item":"minecraft:enchanted_book","count":1,"enchantment":"vanillaskills:unboxing","level":1}]}
+    {
+      "id": "minecraft:breadx8",
+      "item": "minecraft:bread",
+      "count": 8,
+      "price": 1
+    },
+    {
+      "id": "minecraft:breadx16",
+      "item": "minecraft:bread",
+      "count": 16,
+      "price": 2
+    },
+    {
+      "id": "minecraft:breadx32",
+      "item": "minecraft:bread",
+      "count": 32,
+      "price": 4
+    },
+    {
+      "id": "minecraft:cooked_beefx8",
+      "item": "minecraft:cooked_beef",
+      "count": 8,
+      "price": 3
+    },
+    {
+      "id": "minecraft:cooked_beefx16",
+      "item": "minecraft:cooked_beef",
+      "count": 16,
+      "price": 5
+    },
+    {
+      "id": "minecraft:cooked_chickenx12",
+      "item": "minecraft:cooked_chicken",
+      "count": 12,
+      "price": 3
+    },
+    {
+      "id": "minecraft:cooked_porkchopx12",
+      "item": "minecraft:cooked_porkchop",
+      "count": 12,
+      "price": 4
+    },
+    {
+      "id": "minecraft:baked_potatox16",
+      "item": "minecraft:baked_potato",
+      "count": 16,
+      "price": 2
+    },
+    {
+      "id": "minecraft:golden_carrotx8",
+      "item": "minecraft:golden_carrot",
+      "count": 8,
+      "price": 6
+    },
+    {
+      "id": "minecraft:applex16",
+      "item": "minecraft:apple",
+      "count": 16,
+      "price": 2
+    },
+    {
+      "id": "minecraft:pumpkin_piex8",
+      "item": "minecraft:pumpkin_pie",
+      "count": 8,
+      "price": 3
+    },
+    {
+      "id": "minecraft:cookiex16",
+      "item": "minecraft:cookie",
+      "count": 16,
+      "price": 1
+    },
+    {
+      "id": "minecraft:sweet_berriesx16",
+      "item": "minecraft:sweet_berries",
+      "count": 16,
+      "price": 2
+    },
+    {
+      "id": "minecraft:honey_bottlex4",
+      "item": "minecraft:honey_bottle",
+      "count": 4,
+      "price": 3
+    },
+    {
+      "id": "minecraft:milk_bucketx3",
+      "item": "minecraft:milk_bucket",
+      "count": 3,
+      "price": 3
+    },
+    {
+      "id": "minecraft:cobblestonex64",
+      "item": "minecraft:cobblestone",
+      "count": 64,
+      "price": 2
+    },
+    {
+      "id": "minecraft:stonex32",
+      "item": "minecraft:stone",
+      "count": 32,
+      "price": 2
+    },
+    {
+      "id": "minecraft:stone_bricksx32",
+      "item": "minecraft:stone_bricks",
+      "count": 32,
+      "price": 3
+    },
+    {
+      "id": "minecraft:oak_logx16",
+      "item": "minecraft:oak_log",
+      "count": 16,
+      "price": 2
+    },
+    {
+      "id": "minecraft:oak_logx32",
+      "item": "minecraft:oak_log",
+      "count": 32,
+      "price": 3
+    },
+    {
+      "id": "minecraft:oak_planksx32",
+      "item": "minecraft:oak_planks",
+      "count": 32,
+      "price": 2
+    },
+    {
+      "id": "minecraft:glassx32",
+      "item": "minecraft:glass",
+      "count": 32,
+      "price": 3
+    },
+    {
+      "id": "minecraft:sandx32",
+      "item": "minecraft:sand",
+      "count": 32,
+      "price": 2
+    },
+    {
+      "id": "minecraft:dirtx64",
+      "item": "minecraft:dirt",
+      "count": 64,
+      "price": 1
+    },
+    {
+      "id": "minecraft:white_woolx16",
+      "item": "minecraft:white_wool",
+      "count": 16,
+      "price": 2
+    },
+    {
+      "id": "minecraft:terracottax16",
+      "item": "minecraft:terracotta",
+      "count": 16,
+      "price": 3
+    },
+    {
+      "id": "minecraft:white_concrete_powderx16",
+      "item": "minecraft:white_concrete_powder",
+      "count": 16,
+      "price": 3
+    },
+    {
+      "id": "minecraft:bricksx16",
+      "item": "minecraft:bricks",
+      "count": 16,
+      "price": 4
+    },
+    {
+      "id": "minecraft:quartz_blockx8",
+      "item": "minecraft:quartz_block",
+      "count": 8,
+      "price": 5
+    },
+    {
+      "id": "minecraft:torchx16",
+      "item": "minecraft:torch",
+      "count": 16,
+      "price": 1
+    },
+    {
+      "id": "minecraft:torchx32",
+      "item": "minecraft:torch",
+      "count": 32,
+      "price": 1
+    },
+    {
+      "id": "minecraft:glowstonex8",
+      "item": "minecraft:glowstone",
+      "count": 8,
+      "price": 5
+    },
+    {
+      "id": "minecraft:sea_lanternx4",
+      "item": "minecraft:sea_lantern",
+      "count": 4,
+      "price": 6
+    },
+    {
+      "id": "minecraft:scaffoldingx16",
+      "item": "minecraft:scaffolding",
+      "count": 16,
+      "price": 3
+    },
+    {
+      "id": "minecraft:ladderx16",
+      "item": "minecraft:ladder",
+      "count": 16,
+      "price": 2
+    },
+    {
+      "id": "minecraft:obsidianx4",
+      "item": "minecraft:obsidian",
+      "count": 4,
+      "price": 4
+    },
+    {
+      "id": "minecraft:obsidianx8",
+      "item": "minecraft:obsidian",
+      "count": 8,
+      "price": 7
+    },
+    {
+      "id": "minecraft:coalx16",
+      "item": "minecraft:coal",
+      "count": 16,
+      "price": 1
+    },
+    {
+      "id": "minecraft:coalx32",
+      "item": "minecraft:coal",
+      "count": 32,
+      "price": 2
+    },
+    {
+      "id": "minecraft:charcoalx16",
+      "item": "minecraft:charcoal",
+      "count": 16,
+      "price": 1
+    },
+    {
+      "id": "minecraft:iron_ingotx4",
+      "item": "minecraft:iron_ingot",
+      "count": 4,
+      "price": 3
+    },
+    {
+      "id": "minecraft:iron_ingotx8",
+      "item": "minecraft:iron_ingot",
+      "count": 8,
+      "price": 6
+    },
+    {
+      "id": "minecraft:iron_ingotx16",
+      "item": "minecraft:iron_ingot",
+      "count": 16,
+      "price": 11
+    },
+    {
+      "id": "minecraft:gold_ingotx4",
+      "item": "minecraft:gold_ingot",
+      "count": 4,
+      "price": 4
+    },
+    {
+      "id": "minecraft:gold_ingotx8",
+      "item": "minecraft:gold_ingot",
+      "count": 8,
+      "price": 7
+    },
+    {
+      "id": "minecraft:copper_ingotx8",
+      "item": "minecraft:copper_ingot",
+      "count": 8,
+      "price": 3
+    },
+    {
+      "id": "minecraft:copper_ingotx16",
+      "item": "minecraft:copper_ingot",
+      "count": 16,
+      "price": 5
+    },
+    {
+      "id": "minecraft:redstonex16",
+      "item": "minecraft:redstone",
+      "count": 16,
+      "price": 2
+    },
+    {
+      "id": "minecraft:redstonex32",
+      "item": "minecraft:redstone",
+      "count": 32,
+      "price": 4
+    },
+    {
+      "id": "minecraft:lapis_lazulix16",
+      "item": "minecraft:lapis_lazuli",
+      "count": 16,
+      "price": 3
+    },
+    {
+      "id": "minecraft:diamondx1",
+      "item": "minecraft:diamond",
+      "count": 1,
+      "price": 6
+    },
+    {
+      "id": "minecraft:diamondx2",
+      "item": "minecraft:diamond",
+      "count": 2,
+      "price": 11
+    },
+    {
+      "id": "minecraft:diamondx4",
+      "item": "minecraft:diamond",
+      "count": 4,
+      "price": 20
+    },
+    {
+      "id": "minecraft:emeraldx4",
+      "item": "minecraft:emerald",
+      "count": 4,
+      "price": 5
+    },
+    {
+      "id": "minecraft:emeraldx8",
+      "item": "minecraft:emerald",
+      "count": 8,
+      "price": 9
+    },
+    {
+      "id": "minecraft:amethyst_shardx8",
+      "item": "minecraft:amethyst_shard",
+      "count": 8,
+      "price": 4
+    },
+    {
+      "id": "minecraft:stringx16",
+      "item": "minecraft:string",
+      "count": 16,
+      "price": 2
+    },
+    {
+      "id": "minecraft:leatherx8",
+      "item": "minecraft:leather",
+      "count": 8,
+      "price": 3
+    },
+    {
+      "id": "minecraft:slime_ballx8",
+      "item": "minecraft:slime_ball",
+      "count": 8,
+      "price": 4
+    },
+    {
+      "id": "minecraft:gunpowderx8",
+      "item": "minecraft:gunpowder",
+      "count": 8,
+      "price": 4
+    },
+    {
+      "id": "minecraft:bonex16",
+      "item": "minecraft:bone",
+      "count": 16,
+      "price": 2
+    },
+    {
+      "id": "minecraft:flintx16",
+      "item": "minecraft:flint",
+      "count": 16,
+      "price": 2
+    },
+    {
+      "id": "minecraft:blaze_rodx4",
+      "item": "minecraft:blaze_rod",
+      "count": 4,
+      "price": 6
+    },
+    {
+      "id": "minecraft:netherite_scrapx1",
+      "item": "minecraft:netherite_scrap",
+      "count": 1,
+      "price": 18
+    },
+    {
+      "id": "minecraft:iron_pickaxex1",
+      "item": "minecraft:iron_pickaxe",
+      "count": 1,
+      "price": 5
+    },
+    {
+      "id": "minecraft:iron_axex1",
+      "item": "minecraft:iron_axe",
+      "count": 1,
+      "price": 5
+    },
+    {
+      "id": "minecraft:iron_shovelx1",
+      "item": "minecraft:iron_shovel",
+      "count": 1,
+      "price": 3
+    },
+    {
+      "id": "minecraft:iron_swordx1",
+      "item": "minecraft:iron_sword",
+      "count": 1,
+      "price": 5
+    },
+    {
+      "id": "minecraft:fishing_rodx1",
+      "item": "minecraft:fishing_rod",
+      "count": 1,
+      "price": 3
+    },
+    {
+      "id": "minecraft:shearsx1",
+      "item": "minecraft:shears",
+      "count": 1,
+      "price": 3
+    },
+    {
+      "id": "minecraft:flint_and_steelx1",
+      "item": "minecraft:flint_and_steel",
+      "count": 1,
+      "price": 2
+    },
+    {
+      "id": "minecraft:bucketx1",
+      "item": "minecraft:bucket",
+      "count": 1,
+      "price": 2
+    },
+    {
+      "id": "minecraft:bucketx3",
+      "item": "minecraft:bucket",
+      "count": 3,
+      "price": 5
+    },
+    {
+      "id": "minecraft:bowx1",
+      "item": "minecraft:bow",
+      "count": 1,
+      "price": 4
+    },
+    {
+      "id": "minecraft:crossbowx1",
+      "item": "minecraft:crossbow",
+      "count": 1,
+      "price": 5
+    },
+    {
+      "id": "minecraft:shieldx1",
+      "item": "minecraft:shield",
+      "count": 1,
+      "price": 4
+    },
+    {
+      "id": "minecraft:spyglassx1",
+      "item": "minecraft:spyglass",
+      "count": 1,
+      "price": 3
+    },
+    {
+      "id": "minecraft:compassx1",
+      "item": "minecraft:compass",
+      "count": 1,
+      "price": 4
+    },
+    {
+      "id": "minecraft:spongex1",
+      "item": "minecraft:sponge",
+      "count": 1,
+      "price": 5
+    },
+    {
+      "id": "minecraft:iron_helmetx1",
+      "item": "minecraft:iron_helmet",
+      "count": 1,
+      "price": 5
+    },
+    {
+      "id": "minecraft:iron_chestplatex1",
+      "item": "minecraft:iron_chestplate",
+      "count": 1,
+      "price": 8
+    },
+    {
+      "id": "minecraft:iron_leggingsx1",
+      "item": "minecraft:iron_leggings",
+      "count": 1,
+      "price": 7
+    },
+    {
+      "id": "minecraft:iron_bootsx1",
+      "item": "minecraft:iron_boots",
+      "count": 1,
+      "price": 5
+    },
+    {
+      "id": "iron_set",
+      "label": "Iron Armor Set",
+      "price": 22,
+      "grants": [
+        {
+          "item": "minecraft:iron_helmet",
+          "count": 1
+        },
+        {
+          "item": "minecraft:iron_chestplate",
+          "count": 1
+        },
+        {
+          "item": "minecraft:iron_leggings",
+          "count": 1
+        },
+        {
+          "item": "minecraft:iron_boots",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "leather_set",
+      "label": "Leather Armor Set",
+      "price": 5,
+      "grants": [
+        {
+          "item": "minecraft:leather_helmet",
+          "count": 1
+        },
+        {
+          "item": "minecraft:leather_chestplate",
+          "count": 1
+        },
+        {
+          "item": "minecraft:leather_leggings",
+          "count": 1
+        },
+        {
+          "item": "minecraft:leather_boots",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "minecraft:turtle_helmetx1",
+      "item": "minecraft:turtle_helmet",
+      "count": 1,
+      "price": 6
+    },
+    {
+      "id": "minecraft:arrowx16",
+      "item": "minecraft:arrow",
+      "count": 16,
+      "price": 2
+    },
+    {
+      "id": "minecraft:arrowx32",
+      "item": "minecraft:arrow",
+      "count": 32,
+      "price": 3
+    },
+    {
+      "id": "minecraft:ender_pearlx2",
+      "item": "minecraft:ender_pearl",
+      "count": 2,
+      "price": 4
+    },
+    {
+      "id": "minecraft:ender_pearlx4",
+      "item": "minecraft:ender_pearl",
+      "count": 4,
+      "price": 7
+    },
+    {
+      "id": "minecraft:firework_rocketx16",
+      "item": "minecraft:firework_rocket",
+      "count": 16,
+      "price": 4
+    },
+    {
+      "id": "minecraft:tntx4",
+      "item": "minecraft:tnt",
+      "count": 4,
+      "price": 7
+    },
+    {
+      "id": "minecraft:golden_applex1",
+      "item": "minecraft:golden_apple",
+      "count": 1,
+      "price": 8
+    },
+    {
+      "id": "minecraft:golden_applex2",
+      "item": "minecraft:golden_apple",
+      "count": 2,
+      "price": 15
+    },
+    {
+      "id": "minecraft:saddlex1",
+      "item": "minecraft:saddle",
+      "count": 1,
+      "price": 5
+    },
+    {
+      "id": "minecraft:name_tagx1",
+      "item": "minecraft:name_tag",
+      "count": 1,
+      "price": 4
+    },
+    {
+      "id": "minecraft:leadx4",
+      "item": "minecraft:lead",
+      "count": 4,
+      "price": 3
+    },
+    {
+      "id": "minecraft:powered_railx8",
+      "item": "minecraft:powered_rail",
+      "count": 8,
+      "price": 6
+    },
+    {
+      "id": "minecraft:bone_mealx16",
+      "item": "minecraft:bone_meal",
+      "count": 16,
+      "price": 2
+    },
+    {
+      "id": "minecraft:wheat_seedsx16",
+      "item": "minecraft:wheat_seeds",
+      "count": 16,
+      "price": 1
+    },
+    {
+      "id": "minecraft:sugar_canex16",
+      "item": "minecraft:sugar_cane",
+      "count": 16,
+      "price": 2
+    },
+    {
+      "id": "minecraft:nether_wartx8",
+      "item": "minecraft:nether_wart",
+      "count": 8,
+      "price": 3
+    },
+    {
+      "id": "minecraft:bookshelfx4",
+      "item": "minecraft:bookshelf",
+      "count": 4,
+      "price": 5
+    },
+    {
+      "id": "minecraft:bookx8",
+      "item": "minecraft:book",
+      "count": 8,
+      "price": 2
+    },
+    {
+      "id": "book:minecraft:efficiency:1",
+      "label": "Efficiency I",
+      "price": 12,
+      "grants": [
+        {
+          "item": "minecraft:enchanted_book",
+          "count": 1,
+          "enchantment": "minecraft:efficiency",
+          "level": 1
+        }
+      ],
+      "skillPrice": 12
+    },
+    {
+      "id": "book:minecraft:efficiency:2",
+      "label": "Efficiency II",
+      "price": 12,
+      "grants": [
+        {
+          "item": "minecraft:enchanted_book",
+          "count": 1,
+          "enchantment": "minecraft:efficiency",
+          "level": 2
+        }
+      ],
+      "skillPrice": 12
+    },
+    {
+      "id": "book:minecraft:unbreaking:1",
+      "label": "Unbreaking I",
+      "price": 12,
+      "grants": [
+        {
+          "item": "minecraft:enchanted_book",
+          "count": 1,
+          "enchantment": "minecraft:unbreaking",
+          "level": 1
+        }
+      ],
+      "skillPrice": 12
+    },
+    {
+      "id": "book:minecraft:unbreaking:2",
+      "label": "Unbreaking II",
+      "price": 12,
+      "grants": [
+        {
+          "item": "minecraft:enchanted_book",
+          "count": 1,
+          "enchantment": "minecraft:unbreaking",
+          "level": 2
+        }
+      ],
+      "skillPrice": 12
+    },
+    {
+      "id": "book:minecraft:protection:1",
+      "label": "Protection I",
+      "price": 12,
+      "grants": [
+        {
+          "item": "minecraft:enchanted_book",
+          "count": 1,
+          "enchantment": "minecraft:protection",
+          "level": 1
+        }
+      ],
+      "skillPrice": 12
+    },
+    {
+      "id": "book:minecraft:protection:2",
+      "label": "Protection II",
+      "price": 12,
+      "grants": [
+        {
+          "item": "minecraft:enchanted_book",
+          "count": 1,
+          "enchantment": "minecraft:protection",
+          "level": 2
+        }
+      ],
+      "skillPrice": 12
+    },
+    {
+      "id": "book:minecraft:sharpness:1",
+      "label": "Sharpness I",
+      "price": 12,
+      "grants": [
+        {
+          "item": "minecraft:enchanted_book",
+          "count": 1,
+          "enchantment": "minecraft:sharpness",
+          "level": 1
+        }
+      ],
+      "skillPrice": 12
+    },
+    {
+      "id": "book:minecraft:sharpness:2",
+      "label": "Sharpness II",
+      "price": 12,
+      "grants": [
+        {
+          "item": "minecraft:enchanted_book",
+          "count": 1,
+          "enchantment": "minecraft:sharpness",
+          "level": 2
+        }
+      ],
+      "skillPrice": 12
+    },
+    {
+      "id": "book:minecraft:feather_falling:1",
+      "label": "Feather Falling I",
+      "price": 12,
+      "grants": [
+        {
+          "item": "minecraft:enchanted_book",
+          "count": 1,
+          "enchantment": "minecraft:feather_falling",
+          "level": 1
+        }
+      ],
+      "skillPrice": 12
+    },
+    {
+      "id": "book:minecraft:feather_falling:2",
+      "label": "Feather Falling II",
+      "price": 12,
+      "grants": [
+        {
+          "item": "minecraft:enchanted_book",
+          "count": 1,
+          "enchantment": "minecraft:feather_falling",
+          "level": 2
+        }
+      ],
+      "skillPrice": 12
+    },
+    {
+      "id": "book:minecraft:respiration:1",
+      "label": "Respiration I",
+      "price": 12,
+      "grants": [
+        {
+          "item": "minecraft:enchanted_book",
+          "count": 1,
+          "enchantment": "minecraft:respiration",
+          "level": 1
+        }
+      ],
+      "skillPrice": 12
+    },
+    {
+      "id": "book:minecraft:looting:1",
+      "label": "Looting I",
+      "price": 12,
+      "grants": [
+        {
+          "item": "minecraft:enchanted_book",
+          "count": 1,
+          "enchantment": "minecraft:looting",
+          "level": 1
+        }
+      ],
+      "skillPrice": 12
+    },
+    {
+      "id": "book:minecraft:looting:2",
+      "label": "Looting II",
+      "price": 12,
+      "grants": [
+        {
+          "item": "minecraft:enchanted_book",
+          "count": 1,
+          "enchantment": "minecraft:looting",
+          "level": 2
+        }
+      ],
+      "skillPrice": 12
+    },
+    {
+      "id": "book:minecraft:luck_of_the_sea:1",
+      "label": "Luck of the Sea I",
+      "price": 12,
+      "grants": [
+        {
+          "item": "minecraft:enchanted_book",
+          "count": 1,
+          "enchantment": "minecraft:luck_of_the_sea",
+          "level": 1
+        }
+      ],
+      "skillPrice": 12
+    },
+    {
+      "id": "book:minecraft:luck_of_the_sea:2",
+      "label": "Luck of the Sea II",
+      "price": 12,
+      "grants": [
+        {
+          "item": "minecraft:enchanted_book",
+          "count": 1,
+          "enchantment": "minecraft:luck_of_the_sea",
+          "level": 2
+        }
+      ],
+      "skillPrice": 12
+    },
+    {
+      "id": "book:minecraft:fortune:1",
+      "label": "Fortune I",
+      "price": 12,
+      "grants": [
+        {
+          "item": "minecraft:enchanted_book",
+          "count": 1,
+          "enchantment": "minecraft:fortune",
+          "level": 1
+        }
+      ],
+      "skillPrice": 12
+    },
+    {
+      "id": "book:minecraft:silk_touch:1",
+      "label": "Silk Touch I",
+      "price": 12,
+      "grants": [
+        {
+          "item": "minecraft:enchanted_book",
+          "count": 1,
+          "enchantment": "minecraft:silk_touch",
+          "level": 1
+        }
+      ],
+      "skillPrice": 12
+    },
+    {
+      "id": "book:vanillaskills:unboxing:1",
+      "label": "Unboxing I",
+      "price": 12,
+      "grants": [
+        {
+          "item": "minecraft:enchanted_book",
+          "count": 1,
+          "enchantment": "vanillaskills:unboxing",
+          "level": 1
+        }
+      ],
+      "skillPrice": 12
+    }
   ]
 }

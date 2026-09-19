@@ -194,7 +194,7 @@ public class GameplayConfig {
     /** Chance multiplier added per point of the luck attribute (Fortune Finder, Luck potions):
      *  effective chance = base × (1 + luck × this). 0.1 = +50% odds at a maxed Fortune Finder lane. */
     public static volatile double TASK_SHARD_LUCK_BONUS = 0.1;
-    /** Give the vanilla items that ship with no repair material one that fits (trident ← prismarine,
+    /** Give the vanilla items that ship with no repair material one that fits (trident ← prismarine shard,
      *  bow/crossbow/rod ← string, flint-and-steel/shears ← iron, brush ← copper). */
     public static volatile boolean VANILLA_REPAIR_MATERIALS = true;
     /** Movement speed added per Aquatic swim node while in water (0.2 = +20% each, +60% for all three). */
@@ -408,7 +408,7 @@ public class GameplayConfig {
     /** Extra task-shard odds per point of luck (Fortune Finder / Luck potions), as a multiplier:
      *  effective chance = taskShardChance × (1 + luck × this). Default 0.1. 0 ignores luck. */
     public double taskShardLuckBonus = 0.1;
-    /** Give the vanilla items with no repair material one that fits: trident ← prismarine,
+    /** Give the vanilla items with no repair material one that fits: trident ← prismarine shard,
      *  bow/crossbow/fishing rod ← string, flint-and-steel/shears ← iron ingot, brush ← copper ingot. */
     public boolean vanillaRepairMaterials = true;
     /** How much faster each Aquatic swim node makes you in water, as a fraction of your normal speed.
@@ -554,7 +554,7 @@ public class GameplayConfig {
         g.put("taskShardChance", "Chance (0-1) that mining/placing/harvesting drops a shard (0.002 = 1 in 500; 0 disables).");
         g.put("taskShardCooldownSeconds", "After a task shard drops, seconds before that player can earn another.");
         g.put("taskShardLuckBonus", "Task-shard odds bonus per point of luck: chance x (1 + luck x this).");
-        g.put("vanillaRepairMaterials", "Give repair-less vanilla items a repair material (trident<-prismarine, bow/crossbow/rod<-string, flint-and-steel/shears<-iron, brush<-copper).");
+        g.put("vanillaRepairMaterials", "Give repair-less vanilla items a repair material (trident<-prismarine shard, bow/crossbow/rod<-string, flint-and-steel/shears<-iron ingot, brush<-copper ingot).");
         g.put("aquaticSwimSpeed", "Movement speed added per Aquatic swim node while in water (0.2 = +20% each).");
         g.put("bonemealSporeBlossoms", "Bone meal on a spore blossom grows another on a ceiling nearby, so they are renewable.");
         g.put("crateFishingLuckQuality", "Crate-rate bonus per point of fishing luck (~+10% relative per point at 1; 0 ignores luck).");

@@ -47,10 +47,21 @@ public final class QuestShop {
      * @param weight relative likelihood of being stocked on a given day; {@link #defaultWeight} derives
      *               one from the price when a pack does not set it.
      */
-    public record ShopOffer(String key, String label, List<Grant> grants, int price, int weight) {
+    public record ShopOffer(String key, String label, List<Grant> grants, int price, int weight,
+                            int skillPriceOverride) {
         public Grant icon() { return grants.get(0); }
-        /** Skill-Shard cost when paying with Skill Shards (rounded up). */
-        public int skillPrice() { return Math.max(1, (price + CONVERT_RATIO - 1) / CONVERT_RATIO); }
+        /**
+         * Skill-Shard cost when paying with Skill Shards.
+         *
+         * <p>Normally the Quest-Shard price converted at {@link #CONVERT_RATIO} and rounded up, so the two
+         * ways to pay cost the same. An offer may author its own instead, and the enchanted books do:
+         * charging three times as many Quest Shards for stock that Quest Shards exist to buy made the
+         * shop's own currency the worst way to shop.
+         */
+        public int skillPrice() {
+            if (skillPriceOverride > 0) return skillPriceOverride;
+            return Math.max(1, (price + CONVERT_RATIO - 1) / CONVERT_RATIO);
+        }
         /** Display name: explicit label, or the icon item's name with its count. */
         public String displayName() {
             if (label != null) return label;

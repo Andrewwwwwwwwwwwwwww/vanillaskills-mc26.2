@@ -59,6 +59,14 @@ public class ShopOfferDef implements VsEntry {
     /** Selection weight for the daily rotation. 0 (the default) derives it from {@link #price}. */
     public int weight = 0;
 
+    /**
+     * Cost in Skill Shards, when it should not simply be {@link #price} at the convert rate.
+     *
+     * <p>0, the default, derives it as before. Set it to the same number as {@code price} to charge the
+     * same either way, which is what the enchanted books do.
+     */
+    public int skillPrice = 0;
+
     // ---- single-item shorthand (ignored when `grants` is present) ----
     public String item;
     public int count = 1;
@@ -104,6 +112,6 @@ public class ShopOfferDef implements VsEntry {
         for (GrantDef g : grants) {
             out.add(new QuestShop.Grant(g.item, g.count, g.enchantment, g.level));
         }
-        return new QuestShop.ShopOffer(id, label, List.copyOf(out), price, weight);
+        return new QuestShop.ShopOffer(id, label, List.copyOf(out), price, weight, skillPrice);
     }
 }
